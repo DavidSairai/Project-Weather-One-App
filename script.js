@@ -26,7 +26,7 @@ let weather = {
     document.querySelector(".wind").innerText = "Wind Speed: " + speed + "km/h";
     document.querySelector(".weather").classList.remove("loading");
     document.body.style.backgroundImage =
-      "url('https://source.unsplash.com/1800x1200/?nature,city/?" + name + "')";
+      "url('https://source.unsplash.com/1800x1200/?city/?" + name + "')";
   },
 
   search: function () {
@@ -40,8 +40,8 @@ document.querySelector(".search button").addEventListener("click", function () {
 document
   .querySelector(".search-bar")
   .addEventListener("keyup", function (event) {
-    if (event.keyup == "Enter") {
-      weather.search(); /* FIX THE ENTER*/
+    if (event.key == "Enter") {
+      weather.search();
     }
   });
 
