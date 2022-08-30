@@ -53,8 +53,6 @@ h1.temp {
   margin-left: 10px;
 }
 
-.icon {
-}
 input.search-bar {
   border: none;
   outline: none;
@@ -80,4 +78,9 @@ button:hover {background: red;}
   content: "loading....";
   color: red;
   position: absolute;
+}
+
+.david {
+  font-size: 15px;
+  color: yellow;
 }
